@@ -14,9 +14,12 @@ const Home = () => {
           <span className="animate" style={{ "--i": 3 }}></span>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          at cupiditate laborum quae facere debitis ipsam quasi, natus quibusdam
-          officiis fugit repellat veniam totam asperiores doloremque nobis.
+          Driven by a passion for design and innovation, I craft dynamic and
+          responsive websites that offer seamless user experiences. My expertise
+          spans HTML, CSS, JavaScript, and React, focusing on performance,
+          accessibility, and aesthetics. I am dedicated to transforming ideas
+          into digital realities that captivate and engage. Let's create
+          something exceptional together.
           <span className="animate" style={{ "--i": 4 }}></span>
         </p>
         <div className="btn-box">

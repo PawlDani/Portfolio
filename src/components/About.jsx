@@ -45,12 +45,18 @@ const About = () => {
           <span className="animate scroll" style={{ "--i": 3 }}></span>
         </h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
-          dolorum recusandae saepe magni eveniet provident voluptate cupiditate
-          sapiente vero numquam soluta non amet voluptatem ipsam eius quam
-          molestias pariatur, eaque a! Minus repudiandae sapiente asperiores
-          aliquid magnam iste vel quis officiis odio laudantium numquam minima,
-          dolorem officia esse, quidem ipsa.
+          I'm a front-end developer whose unique journey from marine science to
+          technology has honed my analytical skills and problem-solving
+          abilities, now dedicated to innovating web and mobile experiences.
+          This unconventional path has imbued me with a profound understanding
+          of both the natural and digital worlds, allowing me to approach tech
+          challenges with a fresh perspective. Armed with expertise in HTML,
+          CSS, JavaScript, React, and a passion for leveraging technology to
+          address complex issues, I excel at crafting dynamic and impactful
+          solutions that enhance user engagement across diverse digital
+          environments. My background instills a unique blend of creativity and
+          technical prowess, making me adept at turning visionary ideas into
+          reality.
           <span className="animate scroll" style={{ "--i": 4 }}></span>
         </p>
 

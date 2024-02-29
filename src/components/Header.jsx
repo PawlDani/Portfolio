@@ -56,7 +56,7 @@ const Header = () => {
         className="logo"
         onClick={() => setIsActive(false)}
       >
-        Danie.<span className="animate" style={{ "--i": 1 }}></span>
+        Daniel.<span className="animate" style={{ "--i": 1 }}></span>
       </Link>
 
       <div
