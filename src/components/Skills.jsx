@@ -99,8 +99,8 @@ const Skills = () => {
                   <h3>React Native</h3>
                 </div>
               </div>
-              <span className="animate scroll" style={{ "--i": 3 }}></span>
             </div>
+              <span className="animate scroll" style={{ "--i": 3 }}></span>
           </div>
         </div>
 
@@ -116,7 +116,7 @@ const Skills = () => {
               <div className="skills-content other">
                 <div className="progress">
                   <h3>
-                    Web Developement <span>95%</span>
+                    Web Developement 
                   </h3>
                   <div className="bar">
                     <span style={{ width: "95%" }}></span>
@@ -124,7 +124,7 @@ const Skills = () => {
                 </div>
                 <div className="progress">
                   <h3>
-                    Web Design <span>85%</span>
+                    Web Design 
                   </h3>
                   <div className="bar">
                     <span style={{ width: "85%" }}></span>
@@ -132,7 +132,7 @@ const Skills = () => {
                 </div>
                 <div className="progress">
                   <h3>
-                    Mobile Design <span>80%</span>
+                    Mobile Design 
                   </h3>
                   <div className="bar">
                     <span style={{ width: "80%" }}></span>
@@ -140,7 +140,7 @@ const Skills = () => {
                 </div>
                 <div className="progress">
                   <h3>
-                    Testing and Debugging<span>80%</span>
+                    Testing and Debugging
                   </h3>
                   <div className="bar">
                     <span style={{ width: "85%" }}></span>
