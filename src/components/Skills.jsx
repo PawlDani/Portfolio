@@ -100,7 +100,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-              <span className="animate scroll" style={{ "--i": 3 }}></span>
+            <span className="animate scroll" style={{ "--i": 3 }}></span>
           </div>
         </div>
 
@@ -115,33 +115,25 @@ const Skills = () => {
               {/* Add more professional skills as needed */}
               <div className="skills-content other">
                 <div className="progress">
-                  <h3>
-                    Web Developement 
-                  </h3>
+                  <h3>Web Developement</h3>
                   <div className="bar">
                     <span style={{ width: "95%" }}></span>
                   </div>
                 </div>
                 <div className="progress">
-                  <h3>
-                    Web Design 
-                  </h3>
+                  <h3>Web Design</h3>
                   <div className="bar">
                     <span style={{ width: "85%" }}></span>
                   </div>
                 </div>
                 <div className="progress">
-                  <h3>
-                    Mobile Design 
-                  </h3>
+                  <h3>Mobile Design</h3>
                   <div className="bar">
                     <span style={{ width: "80%" }}></span>
                   </div>
                 </div>
                 <div className="progress">
-                  <h3>
-                    Testing and Debugging
-                  </h3>
+                  <h3>Testing and Debugging</h3>
                   <div className="bar">
                     <span style={{ width: "85%" }}></span>
                   </div>

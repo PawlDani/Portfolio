@@ -12,8 +12,6 @@ const Contact = () => {
 
       if (Math.ceil(scrolled) >= scrollable - buffer) {
         setShowAnimate(true);
-      } else {
-        setShowAnimate(false);
       }
     };
 

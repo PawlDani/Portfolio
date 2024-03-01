@@ -590,6 +590,67 @@ span {
   background: var(--main-color);
 }
 
+.projects {
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+
+.project-box {
+  position: relative;
+  height: 100%;
+}
+
+.project-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.851); /* Black background with opacity */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-content {
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+.project-box:hover .overlay {
+  opacity: 1.5;
+}
+.projects .projects-heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 5.5rem;
+}
+
+.projects .project-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects .project-column {
+  flex: 1 1 300px; /* Adjust based on your layout needs */
+  margin: 1rem;
+}
+
+.projects .project-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
@@ -676,7 +737,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .footer-text,
@@ -756,8 +817,11 @@ span {
   animation: none;
 }
 
-section:nth-child(odd) .animate.scroll,
-.footer .animate.scroll {
+section:nth-child(odd) .animate.scroll {
+  background: var(--second-bg-color);
+}
+
+.contact {
   background: var(--second-bg-color);
 }
 
@@ -766,6 +830,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 .about.show-animate .animate.scroll,
+.projects.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
@@ -773,7 +838,20 @@ section:nth-child(odd) .animate.scroll,
   transition-delay: calc(0.3s * var(--i));
   width: 0;
 }
+/* Initial State */
+.projects .project-row,
+.projects {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
+/* Animated State */
+.projects.show-animate .project-row,
+.projects.show-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
   html {

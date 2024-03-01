@@ -5,7 +5,14 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const sections = ["home", "about", "education", "skills", "contact"];
+  const sections = [
+    "home",
+    "about",
+    "education",
+    "skills",
+    "projects",
+    "contact",
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,7 +59,7 @@ const Header = () => {
     >
       <Link
         smooth
-        to="/#home"
+        to="/home"
         className="logo"
         onClick={() => setIsActive(false)}
       >
@@ -72,7 +79,7 @@ const Header = () => {
           <Link
             key={index}
             smooth
-            to={`/#${section}`}
+            to={`#${section}`}
             onClick={() => setIsActive(false)}
             className={`nav-link ${activeSection === section ? "active" : ""}`}
           >

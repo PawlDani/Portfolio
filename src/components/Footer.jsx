@@ -12,8 +12,6 @@ const Footer = () => {
 
       if (Math.ceil(scrolled) >= scrollable - buffer) {
         setShowAnimate(true);
-      } else {
-        setShowAnimate(false);
       }
     };
 
