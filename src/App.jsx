@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
@@ -9,8 +9,15 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import Thankyou from "./components/Thankyou";
 
 function App() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleFormSubmit = () => {
+    setIsSubmitted(true);
+  };
+
   return (
     <Router>
       <div className="App">
@@ -20,7 +27,8 @@ function App() {
         <Education />
         <Skills />
         <Projects />
-        <Contact />
+        <Contact onFormSubmit={handleFormSubmit} />
+        {isSubmitted && <Thankyou />}
         <Footer />
       </div>
     </Router>

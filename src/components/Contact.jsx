@@ -22,20 +22,6 @@ const Contact = () => {
     };
   }, []);
 
-  const handleSubmit = (event) => {
-    // Prevent the default form submission
-    const formData = new FormData(event.target);
-    const data = {};
-    formData.forEach((value, key) => (data[key] = value));
-
-    // Log the form data to the console
-    console.log("Form Data:", data);
-
-    // Here you can also implement any form validation or processing before submitting
-
-    // event.target.submit(); // Uncomment if you decide to submit the form programmatically
-  };
-
   return (
     <section
       className={`contact ${showAnimate ? "show-animate" : ""}`}
@@ -47,10 +33,8 @@ const Contact = () => {
       </h2>
 
       <form
-        name="contact"
+        action="https://formspree.io/f/mleqnzar" // Update your form action to the Formspree endpoint
         method="POST"
-        data-netlify="true"
-        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
 
