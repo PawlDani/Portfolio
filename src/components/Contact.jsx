@@ -32,23 +32,12 @@ const Contact = () => {
         <span className="animate scroll" style={{ "--i": 1 }}></span>
       </h2>
 
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        onSubmit={handleSubmit}
-      >
-        {/* Netlify needs this hidden input to correctly process the form */}
+      <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
 
         <div className="input-box">
           <div className="input-field">
-            <input
-              type="text"
-              placeholder="Full Name"
-              name="fullName"
-              required
-            />
+            <input type="text" placeholder="Full Name" name="name" required />
             <span className="focus"></span>
           </div>
           <div className="input-field">
@@ -65,12 +54,7 @@ const Contact = () => {
 
         <div className="input-box">
           <div className="input-field">
-            <input
-              type="tel"
-              placeholder="Mobile Number"
-              name="mobileNumber"
-              required
-            />
+            <input type="tel" placeholder="Mobile Number" name="mobileNumber" />
             <span className="focus"></span>
           </div>
           <div className="input-field">
