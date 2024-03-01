@@ -22,6 +22,20 @@ const Contact = () => {
     };
   }, []);
 
+  const handleSubmit = (event) => {
+    // Prevent the default form submission
+    const formData = new FormData(event.target);
+    const data = {};
+    formData.forEach((value, key) => (data[key] = value));
+
+    // Log the form data to the console
+    console.log("Form Data:", data);
+
+    // Here you can also implement any form validation or processing before submitting
+
+    // event.target.submit(); // Uncomment if you decide to submit the form programmatically
+  };
+
   return (
     <section
       className={`contact ${showAnimate ? "show-animate" : ""}`}
@@ -32,7 +46,12 @@ const Contact = () => {
         <span className="animate scroll" style={{ "--i": 1 }}></span>
       </h2>
 
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
         <input type="hidden" name="form-name" value="contact" />
 
         <div className="input-box">
