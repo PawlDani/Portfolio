@@ -39,7 +39,6 @@ const Education = () => {
           </h3>
 
           <div className="education-box">
-            {/* Add more education entries as needed */}
             <div className="education-content">
               <div className="content">
                 <div className="year">2023 - 2024</div>

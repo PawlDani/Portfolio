@@ -41,7 +41,6 @@ const Skills = () => {
           <div className="skills-box">
             <div className="skills-content">
               <div className="coding-content">
-                {/* Add more coding skills as needed */}
                 <div className="coding">
                   <i className="fab fa-html5"></i>
                   <h3>HTML</h3>
@@ -112,7 +111,6 @@ const Skills = () => {
           </h3>
           <div className="skills-box">
             <div className="skills-content other">
-              {/* Add more professional skills as needed */}
               <div className="skills-content other">
                 <div className="progress">
                   <h3>Web Developement</h3>

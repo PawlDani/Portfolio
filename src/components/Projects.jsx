@@ -29,7 +29,7 @@ const Projects = () => {
       description:
         "Linguola is a language learning app that helps users learn new languages through interactive lessons, quizzes, and games. It was built using React and Supabase for backend services.",
       image: projectImage1,
-      url: "https://linguola.netlify.app", // Project URL
+      url: "https://linguola.pl/app", // Project URL
     },
     {
       id: 2,
@@ -39,8 +39,6 @@ const Projects = () => {
       image: projectImage2,
       url: "https://www.consolarenergy.de", // Project URL
     },
-
-    // Add other projects similarly
   ];
 
   return (

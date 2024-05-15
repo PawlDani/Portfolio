@@ -32,10 +32,7 @@ const Contact = () => {
         <span className="animate scroll" style={{ "--i": 1 }}></span>
       </h2>
 
-      <form
-        action="https://formspree.io/f/mleqnzar" // Update your form action to the Formspree endpoint
-        method="POST"
-      >
+      <form action="https://formspree.io/f/mleqnzar" method="POST">
         <input type="hidden" name="form-name" value="contact" />
 
         <div className="input-box">

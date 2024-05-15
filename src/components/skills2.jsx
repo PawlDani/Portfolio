@@ -40,7 +40,6 @@ const Skills = () => {
           </h3>
           <div className="skills-box">
             <div className="skills-content">
-              {/* Add more coding skills as needed */}
               <div className="progress">
                 <h3>
                   HTML <span>90%</span>
@@ -86,7 +85,6 @@ const Skills = () => {
           </h3>
           <div className="skills-box">
             <div className="skills-content">
-              {/* Add more professional skills as needed */}
               <div className="progress">
                 <h3>
                   Web Design <span>95%</span>

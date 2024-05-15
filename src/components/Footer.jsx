@@ -8,8 +8,7 @@ const Footer = () => {
       const scrollable =
         document.documentElement.scrollHeight - window.innerHeight;
       const scrolled = window.scrollY;
-      const buffer = 200; // Adjust this value to trigger the animation earlier
-
+      const buffer = 200;
       if (Math.ceil(scrolled) >= scrollable - buffer) {
         setShowAnimate(true);
       }
